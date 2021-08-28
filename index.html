@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/app.css">
 
 
@@ -104,7 +105,7 @@
         <p class="font-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
           Ipsum has been the industry's standard dummy text ever.</p>
 
-        <div class="margin-top-bttn"><button type="button" class="btn btn-primary btn-lg sign-up"> Sign Up</button>
+        <div class="margin-top-bttn"><button type="button" class="btn btn-primary btn-lg sign-up" data-bs-toggle="modal" data-bs-target="#signupModal"> Sign Up</button>
           <button type="button" class="btn btn-primary btn-lg login" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
         </div>
       </div>
@@ -777,7 +778,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Sign In</h5>
+           <h5 class="modal-title">Sign In</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -800,16 +801,68 @@
               <div class="d-grid gap-2 mt-4">
                 <button class="btn btn-light" type="button">
                   Continue with Facebook</button>
-                <button class="btn btn-light" type="button">Continue with Google</button>
+                <button class="btn btn-light" type="button"><i class="fab fa-facebook"></i>Continue with Google</button>
               </div>
               <div class="mb-4 mt-3">
-              <p>Dont Have Account? <a href="#">Sign-up</a></p>
+              <p>Dont Have Account? <a href="#signupModal">Sign-up</a></p>
             </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="modal fade login-modal" id="signupModal" tabindex="-1" aria-labelledby="signupModallLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+           <h5 class="modal-title">Sign In</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-2">
+                <input type="text" class="form-control" id="recipient-name" placeholder="First Name">
+              </div>
+              <div class="mb-2">
+                <input type="text" class="form-control" id="recipient-name" placeholder="Last Name">
+              </div>
+              <div class="mb-2">
+                <input type="date" class="form-control" id="recipient-name" placeholder="Date of Birth">
+              </div>
+              <div class="mb-2">
+                <input type="email" class="form-control" id="recipient-name" placeholder="Email Address">
+              </div>
+              <div class="mb-2">
+                <input type="tel" class="form-control" id="recipient-name" placeholder="Mobile Number">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="recipient-name" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="terms" name="terms" value="policy">
+                <label for="vehicle1"> Accept the <a href="#"> Terms and Conditions</a></label>
+              </div>
+              <div class="d-grid ">
+                <button class="btn btn-primary" type="button">Submit</button>
+              </div>
+            <div class="center-t mt-4">
+              <P>Or Sign Up With</P>
+            </div>
+              <div class="d-grid gap-2 mt-4">
+                <button class="btn btn-light" type="button">
+                  Continue with Facebook</button>
+                <button class="btn btn-light" type="button">Continue with Google</button>
+              </div>
+              <div class="mb-4 mt-3">
+              <p>Already have an account? <a href="#"> Sign In</a></p>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
